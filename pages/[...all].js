@@ -1,10 +1,7 @@
 import Head from 'next/head'
 import {withRouter} from 'next/router'
-import {useState} from 'react'
 
 const Home = ({ router }) => {
-  const [pickedColors, setPickedColors] = useState([])
-
   const colors = router.asPath.split('/').filter(({length}) => length > 0)
 
   return (
